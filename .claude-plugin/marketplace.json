@@ -1,0 +1,8 @@
+{
+  "name": "my-claude-plugin-marketplace",
+  "owner": {
+    "name": "Keril Patel"
+  },
+  "description": "Personal marketplace for Keril Patel's Claude Code plugins",
+  "plugins": []
+}
