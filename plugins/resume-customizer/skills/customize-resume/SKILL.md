@@ -2,6 +2,7 @@
 description: Tailor a master resume to a job description, compile it with tectonic, and log the application.
 argument-hint: [paste the job description, or a path to a file containing it]
 allowed-tools: Read, Write, Glob, Bash(mkdir *), Bash(tectonic *), Bash(ls *)
+disallowed-tools: Edit
 disable-model-invocation: true
 ---
 
@@ -39,7 +40,7 @@ Before doing any tailoring work, ask the user to confirm they want to proceed wi
 
 ## Step 5 — Read the master resume and establish its structure
 
-Read `<resume-root>/resume.tex` — the master source. Always use this exact root file, never a previously-tailored subfolder copy, so edits don't compound across applications.
+Read `<resume-root>/resume.tex` — the master source. Always use this exact root file, never a previously-tailored subfolder copy, so edits don't compound across applications. Treat it as **read-only for the rest of this run**: it is only ever read, never written or edited — the tailored output always goes to a new file in a new folder (Step 10), never back into this path.
 
 Then resolve which parts of it are safe to edit:
 
@@ -51,6 +52,7 @@ Finally, read `<resume-root>/APPLICATIONS.md`, if it exists — review past appl
 ## Step 6 — Guardrails (apply throughout Steps 7-8)
 
 - Never fabricate a skill, tool, employer, metric, or responsibility that isn't already present in `resume.tex`.
+- Never write to or overwrite `<resume-root>/resume.tex` itself — it is read-only input for every run, tailored or not. The only file ever written is the new copy at `<resume-root>/<folder>/resume.tex` (Step 10).
 - Only edit the sections marked editable in the Step 5 structure; never touch anything marked off-limits there.
 - Preserve exact section order, LaTeX environment structure, spacing commands (e.g. `\setlength{\itemsep}`), tabular row syntax, dates, titles, and company names.
 - Escape LaTeX special characters (`% & $ # _ { } ~ ^ \`) in any new or edited prose.
@@ -66,6 +68,8 @@ Ask the user to validate the plan or adjust it — they may want to add a truthf
 
 Apply the validated plan per the Step 6 guardrails: rephrase existing SUMMARY/SKILLS/EXPERIENCE/PROJECTS content toward the JD's terminology where it's truthfully applicable, without adding claims that aren't already backed by the master resume.
 
+This is a draft held in working memory only — do not write or touch any file yet, and never the master `<resume-root>/resume.tex`. The first and only time this draft is written to disk is Step 10, and it's written to the new folder, not the master file's path.
+
 ## Step 9 — Pick a folder name
 
 Name the folder after the **keyword/category** this tailoring targets, never after the company or role title — the goal is that a future application to a *different* company for a similar-category role can find and reuse this same tailored resume.
@@ -77,7 +81,7 @@ Name the folder after the **keyword/category** this tailoring targets, never aft
 ## Step 10 — Write & compile
 
 1. `mkdir -p <resume-root>/<folder>`
-2. Write the tailored LaTeX to `<resume-root>/<folder>/resume.tex`
+2. Write the tailored LaTeX to `<resume-root>/<folder>/resume.tex` — a brand-new file in the new folder. Do not write to, overwrite, or copy over `<resume-root>/resume.tex`; that file must be byte-for-byte unchanged at the end of this run.
 3. Run `tectonic resume.tex` from inside that folder (e.g. `cd <resume-root>/<folder> && tectonic resume.tex`)
 4. Capture whether it succeeded, and the full tectonic output either way.
 
