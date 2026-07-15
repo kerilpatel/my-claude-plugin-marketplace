@@ -1,4 +1,4 @@
-# 🧩 my-claude-plugin-marketplace
+# 🧩 My Claude Plugin Marketplace
 
 > My Claude plugins that make my life easier — or, less politely, so I don't bang my head 🧱 on the wall while working with LLMs.
 
@@ -20,11 +20,9 @@ Then browse and install with:
 
 ## 🔌 Plugins
 
-_Nothing here yet — first one's cooking 🍳._
-
 | Plugin | What it does |
 |---|---|
-| — | — |
+| [`resume-customizer`](plugins/resume-customizer) | Tailors your master resume to a job description via `/resume-customizer:customize-resume` — summarizes the JD, extracts keywords, weaves in truthful overlaps, compiles a PDF, and logs the application. |
 
 ## 🤔 Why this exists
 

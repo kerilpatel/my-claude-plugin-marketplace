@@ -1,0 +1,11 @@
+{
+  "name": "resume-customizer",
+  "displayName": "Resume Customizer",
+  "description": "Tailors your master LaTeX resume to a specific job description, compiles it with tectonic, and logs the application.",
+  "author": {
+    "name": "Keril Patel",
+    "email": "kerilpatel@outlook.com"
+  },
+  "license": "MIT",
+  "keywords": ["resume", "job-search", "career", "latex"]
+}

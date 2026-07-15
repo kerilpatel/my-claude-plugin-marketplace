@@ -4,5 +4,11 @@
     "name": "Keril Patel"
   },
   "description": "Personal marketplace for Keril Patel's Claude Code plugins",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "resume-customizer",
+      "source": "./plugins/resume-customizer",
+      "description": "Tailors your master LaTeX resume to a specific job description, compiles it with tectonic, and logs the application."
+    }
+  ]
 }
