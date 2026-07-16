@@ -27,29 +27,29 @@ The flow:
 
 ```
 ┌───────────────────────────────────┐
-│ Locate or create cover-letter.tex  │
+│ Locate or create cover-letter.tex │
 └───────────────────────────────────┘
                  │
                  ▼
 ┌───────────────────────────────────┐
-│  Rework opening line / body /      │
-│  closing for the target context    │
+│  Rework opening line / body /     │
+│  closing for the target context   │
 └───────────────────────────────────┘
                  │
                  ▼
 ┌───────────────────────────────────┐
-│           Compile PDF              │
+│           Compile PDF             │
 └───────────────────────────────────┘
                  │
                  ▼
 ┌───────────────────────────────────┐
-│  Push to GitHub + blob link        │
-│  (optional, asks first)            │
+│  Push to GitHub + blob link       │
+│  (optional, asks first)           │
 └───────────────────────────────────┘
                  │
                  ▼
 ┌───────────────────────────────────┐
-│      Report result to you          │
+│      Report result to you         │
 └───────────────────────────────────┘
 ```
 
