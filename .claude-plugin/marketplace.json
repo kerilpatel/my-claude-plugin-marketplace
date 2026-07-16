@@ -6,9 +6,14 @@
   "description": "Personal marketplace for Keril Patel's Claude Code plugins",
   "plugins": [
     {
-      "name": "resume-customizer",
-      "source": "./plugins/resume-customizer",
-      "description": "Tailors your master LaTeX resume to a specific job description, compiles it with tectonic, and logs the application."
+      "name": "doc-structurer",
+      "source": "./plugins/doc-structurer",
+      "description": "Restructures and polishes a master LaTeX document for a target context — structure, phrasing, emphasis — compiles it with tectonic, logs the run, and optionally pushes to GitHub for record keeping. Never invents content."
+    },
+    {
+      "name": "prose-polisher",
+      "source": "./plugins/prose-polisher",
+      "description": "Polishes the prose of a master LaTeX letter for a target context — grammar, flow, emphasis — compiles it to PDF with tectonic, and optionally pushes to GitHub for record keeping. Never invents content."
     }
   ]
 }

@@ -20,9 +20,12 @@ Then browse and install with:
 
 ## 🔌 Plugins
 
+> ✍️ **A note on the writing tools below:** they only rework what's *already true* in a document — restructure, fix phrasing, shift emphasis. They never invent a skill, employer, number, or fact. Polish, not fiction.
+
 | Plugin | What it does |
 |---|---|
-| [`resume-customizer`](plugins/resume-customizer) | Tailors your master resume to a job description via `/resume-customizer:customize-resume` — summarizes the JD, extracts keywords, weaves in truthful overlaps, compiles a PDF, and logs the application. |
+| [`doc-structurer`](plugins/doc-structurer) | Restructures and polishes a master LaTeX document for a target context via `/doc-structurer:structure-doc` — proposes a rework plan, rewords truthful overlaps, compiles a PDF, logs the run, and (with confirmation) pushes to GitHub with a blob link back, for record keeping. |
+| [`prose-polisher`](plugins/prose-polisher) | Polishes the prose of a master LaTeX letter via `/prose-polisher:polish-prose` — grammar, flow, emphasis for the target context — compiles straight to PDF, and (with confirmation) pushes to GitHub with a blob link back, for record keeping. |
 
 ## 🤔 Why this exists
 

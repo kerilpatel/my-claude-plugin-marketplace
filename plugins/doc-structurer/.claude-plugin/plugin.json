@@ -1,0 +1,11 @@
+{
+  "name": "doc-structurer",
+  "displayName": "Doc Structurer",
+  "description": "Restructures and polishes a master LaTeX document for a target context — structure, phrasing, emphasis — compiles it with tectonic, logs the run, and optionally pushes to GitHub for record keeping. Never invents content.",
+  "author": {
+    "name": "Keril Patel",
+    "email": "kerilpatel@outlook.com"
+  },
+  "license": "MIT",
+  "keywords": ["latex", "structure", "phrasing", "writing", "tectonic"]
+}
