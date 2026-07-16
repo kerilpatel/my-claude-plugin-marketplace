@@ -2,7 +2,7 @@
 
 > Tailor your master LaTeX resume to a job description, compile it, and keep a log of every application.
 
-Give it a job description (pasted or as a file path) and it will: summarize the JD, extract keywords, check with you before doing any work, propose a short tailoring plan for your review, weave in truthful keyword overlaps, compile a PDF with `tectonic`, and log the run.
+Give it a job description (pasted or as a file path) and it will summarize the JD, extract keywords, and propose a tailoring plan all together in one message — one confirmation from you and it weaves in truthful keyword overlaps, compiles a PDF with `tectonic`, and logs the run.
 
 > 🎯 **Quick word on purpose:** this thing isn't here to help you fib your way into a job. Its whole reason for existing is to re-emphasize and reword what's *already true* about you, so the resume speaks the JD's language — no invented skills, no made-up years of experience, no fictional job titles. A resume like that wastes everyone's time: yours when you get found out, and the recruiter's for reading it. Good tailoring is just honest framing, done well.
 
@@ -23,14 +23,42 @@ That's it. Everything else is set up for you on first run: the skill inspects yo
 Run it with no arguments and it will ask you to paste the JD.
 
 The flow:
-1. Locates your `resume.tex`.
-2. Summarizes the JD and extracts keywords (Languages/Tools, Frameworks, Concepts/Practices, Domain/Soft skills).
-3. **Checks in with you** before doing any work — flags mismatches or qualification gaps, and stops if you say to abort.
-4. Reads your master resume, confirms which sections are safe to edit (only asked once — saved to `RESUME_STRUCTURE.md`), and checks past applications for context.
-5. **Proposes a short tailoring plan** section by section so you can validate, adjust, or add details before anything is written.
-6. Drafts the tailored `resume.tex`, staying truthful to what's already in your master resume.
-7. Picks a folder name and compiles the PDF.
-8. Logs the application to `APPLICATIONS.md`.
+
+```
+┌─────────────────────────────────┐
+│        Locate resume.tex        │
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│ Review: summary, keywords, plan │
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│      You confirm or adjust      │
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│    Draft tailored resume.tex    │
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│        Pick folder name         │
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│           Compile PDF           │
+└─────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│     Log to APPLICATIONS.md      │
+└─────────────────────────────────┘
+```
 
 ## 🗂️ Folder naming
 
