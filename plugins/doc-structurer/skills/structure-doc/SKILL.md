@@ -64,6 +64,16 @@ Ask the user once, covering everything from Step 4 together: do they want to pro
 
 Apply the confirmed plan per the Step 3 guardrails: rephrase existing SUMMARY/SKILLS/EXPERIENCE/PROJECTS content toward the JD's terminology where it's truthfully applicable, without adding claims that aren't already backed by the master resume.
 
+### Voice of the rewritten prose
+
+Any prose you author has to read as the user's own writing, not as generated text. Recruiters spot the difference and it costs the application.
+
+- **No em dashes or en dashes.** Not `—`, not `–`, not the LaTeX ligatures `---` or `--`. Use a full stop, a comma, or a colon. Ordinary hyphens in compound words (`design-systems work`, `well-tested`) are fine; the dash-as-dramatic-pause is not. Before writing the file in Step 8, grep the draft for these and rewrite any hit that falls in authored prose.
+- **No inflated register** where a plain word works: *leverage, spearhead, orchestrate, utilize, delve, robust, seamless, pivotal, meticulous, passionate, dynamic, synergy, holistic.*
+- **Bullets start with a concrete verb and state an outcome.** Not "Responsible for…", not "Leveraged X to drive Y."
+- **No rule-of-three padding.** Three balanced items in a row is a tell, not a style.
+- Keep the shorter word. One idea per bullet.
+
 This is a draft held in working memory only — do not write or touch any file yet, and never the master `<resume-root>/resume.tex`. The first and only time this draft is written to disk is Step 8, and it's written to the new folder, not the master file's path.
 
 ## Step 7 — Pick a folder name
