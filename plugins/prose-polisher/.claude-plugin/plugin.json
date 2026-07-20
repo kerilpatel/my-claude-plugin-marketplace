@@ -1,7 +1,7 @@
 {
   "name": "prose-polisher",
   "displayName": "Prose Polisher",
-  "description": "Writes a fresh cover letter for a job description, drawing every fact from the master resume and the layout from the master letter, compiles it to PDF with tectonic, and optionally pushes to GitHub for record keeping. Never invents content.",
+  "description": "Writes a fresh letter for a target context — substance from a master LaTeX document, layout from a master letter — compiles it to PDF with tectonic, and optionally pushes to GitHub for record keeping. Never invents content.",
   "author": {
     "name": "Keril Patel",
     "email": "kerilpatel@outlook.com"

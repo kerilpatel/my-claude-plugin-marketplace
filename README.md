@@ -25,7 +25,7 @@ Then browse and install with:
 | Plugin | What it does |
 |---|---|
 | [`doc-structurer`](plugins/doc-structurer) | Restructures and polishes a master LaTeX document for a target context via `/doc-structurer:structure-doc` — proposes a rework plan, rewords truthful overlaps, compiles a PDF, logs the run, and (with confirmation) pushes to GitHub with a blob link back, for record keeping. |
-| [`prose-polisher`](plugins/prose-polisher) | Writes a fresh cover letter for a job description via `/prose-polisher:polish-prose` — facts drawn from your master resume, layout from your master letter — compiles straight to PDF, and (with confirmation) pushes to GitHub with a blob link back, for record keeping. |
+| [`prose-polisher`](plugins/prose-polisher) | Writes a fresh letter for a target context via `/prose-polisher:polish-prose` — substance drawn from a master LaTeX document, layout from a master letter — compiles straight to PDF, and (with confirmation) pushes to GitHub with a blob link back, for record keeping. |
 
 ## 🤔 Why this exists
 
