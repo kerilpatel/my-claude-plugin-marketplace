@@ -1,6 +1,6 @@
 ---
 description: Write a fresh cover letter for a job description, drawing facts from the master resume and layout from the master cover letter, then compile it to PDF with tectonic.
-argument-hint: [paste the job description, or a path to a file containing it] [--resume <path>]
+argument-hint: "[paste the job description, or a path to a file containing it] [--resume <path>]"
 allowed-tools: Read, Write, Glob, Bash(mkdir *), Bash(mktemp *), Bash(tectonic *), Bash(cp *), Bash(rm *), Bash(ls *), Bash(grep *), Bash(wc *), Bash(git *)
 disallowed-tools: Edit
 disable-model-invocation: true
