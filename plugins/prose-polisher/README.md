@@ -32,8 +32,20 @@ The flow:
                  │
                  ▼
 ┌───────────────────────────────────┐
+│  Gap analysis: rank what the      │
+│  context asks for, match evidence │
+└───────────────────────────────────┘
+                 │
+                 ▼
+┌───────────────────────────────────┐
 │  Rework opening line / body /     │
 │  closing for the target context   │
+└───────────────────────────────────┘
+                 │
+                 ▼
+┌───────────────────────────────────┐
+│  Quality gates (length, style,    │
+│  metrics, truthfulness)           │
 └───────────────────────────────────┘
                  │
                  ▼
@@ -66,6 +78,18 @@ e.g. `cover-letters/stripe-senior-backend-engineer.pdf`. One PDF per application
 ## ☁️ GitHub record keeping
 
 If your master letter lives in a git repo with a GitHub remote, each successful run offers to commit and push the fresh PDF (it always asks before pushing, stages nothing unrelated, and never force-pushes), then gives you the GitHub **blob link** to it. Since every application has its own PDF, every application gets its own permanent link — a clean clickable record per org and role. No GitHub remote? The step is skipped silently.
+
+## ✂️ How it keeps the letter readable
+
+The master letter is a reservoir, not a checklist. Each run picks the two or three strongest matches for the context and leaves the rest out, then holds the draft to a set of gates before it compiles:
+
+- **250-400 words, three paragraphs, one page.** Never longer.
+- **At most two metrics**, and only where the context actually asks for that dimension of the work. Your resume already carries the numbers; the letter carries the reasoning it can't.
+- **No em dashes**, no inflated register (*leverage, spearhead, seamless, passionate*), none of the stock AI cadences ("I am excited to apply", "Not only X, but Y").
+- **No apologetic framing.** Requirements you don't match are reported back to you, not apologized for in the letter.
+- **An opening line that couldn't be pasted into a different application.** If it could, it gets rewritten.
+
+If a draft fails a gate, it's revised and re-checked before compiling.
 
 ## 🛡️ Guardrails
 
